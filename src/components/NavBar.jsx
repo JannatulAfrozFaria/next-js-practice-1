@@ -31,7 +31,6 @@ const NavBar = () => {
                     {
                         links?.map((link)=> <Link></Link> )
                     }
-                    {links}
                 </ul>
             </nav>
         </div>
