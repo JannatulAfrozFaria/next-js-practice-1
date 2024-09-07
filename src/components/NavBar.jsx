@@ -32,9 +32,10 @@ const NavBar = () => {
                 <h6 className="text-3xl text-sky-200"> <span className="text-purple-200">Next</span> Practice</h6>
                 <ul className="flex gap-4 text-white">
                     {
-                        links?.map((link)=> <Link key={link.path} href={link.path} > {link.title} </Link> )
+                        links?.map((link)=> <Link className={`${pathName === link.path && "text-purple-200 font-semibold" }`} key={link.path} href={link.path} > {link.title} </Link> )
                     }
                 </ul>
+                <button className="text-white">Login</button>
             </nav>
         </div>
     );
