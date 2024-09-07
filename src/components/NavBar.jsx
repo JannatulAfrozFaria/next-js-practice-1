@@ -29,7 +29,7 @@ const NavBar = () => {
         },
     ]
     const handler = () =>{
-
+        router.push('/login')
     }
     return (
         <div>
