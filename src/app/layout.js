@@ -26,11 +26,9 @@ export default function RootLayout({ children }) {
         <nav>
           <h6>Logo</h6>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
           </ul>
         </nav>
         {children}
