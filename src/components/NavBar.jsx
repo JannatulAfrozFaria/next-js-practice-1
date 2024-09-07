@@ -28,9 +28,9 @@ const NavBar = () => {
     ]
     return (
         <div>
-            <nav className="bg-sky-600 p-6 flex justify-between">
+            <nav className="bg-sky-600 p-6 flex justify-between items-center">
                 <h6 className="text-3xl text-sky-200"> <span className="text-purple-200">Next</span> Practice</h6>
-                <ul className="flex gap-4 text-white">
+                <ul className="flex gap-4 justify-between items-center text-white">
                     {
                         links?.map((link)=> <Link className={`${pathName === link.path && "text-purple-200 font-semibold" }`} key={link.path} href={link.path} > {link.title} </Link> )
                     }
