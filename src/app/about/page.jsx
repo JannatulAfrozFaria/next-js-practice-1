@@ -5,6 +5,7 @@ const AboutPage = () => {
     return (
         <div>
             <AboutContent></AboutContent>
+            <h2>Here we will add our introduction and working policies</h2>
         </div>
     );
 };
