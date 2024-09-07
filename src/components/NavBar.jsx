@@ -1,9 +1,11 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const NavBar = () => {
     const pathName = usePathname();
+    const router = useRouter();
     const links = [
         {
             title: "About",
@@ -26,6 +28,9 @@ const NavBar = () => {
             path: '/contact'
         },
     ]
+    const handler = () =>{
+
+    }
     return (
         <div>
             <nav className="bg-sky-600 p-6 flex justify-between items-center">
