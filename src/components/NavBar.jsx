@@ -1,6 +1,9 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
+    const pathName = usePathname();
     const links = [
         {
             title: "About",
