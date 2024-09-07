@@ -7,20 +7,20 @@ const NavBar = () => {
             path: '/about'
         },
         {
-            title: "About",
-            path: '/about'
+            title: "Service",
+            path: '/service'
         },
         {
-            title: "About",
-            path: '/about'
+            title: "Port Folio",
+            path: '/portfolio'
         },
         {
-            title: "About",
-            path: '/about'
+            title: "Blogs",
+            path: '/blogs'
         },
         {
-            title: "About",
-            path: '/about'
+            title: "Contact",
+            path: '/contact'
         },
     ]
     return (
