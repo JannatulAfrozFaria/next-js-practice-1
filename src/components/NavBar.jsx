@@ -1,6 +1,28 @@
 import Link from "next/link";
 
 const NavBar = () => {
+    const links = [
+        {
+            title: "About",
+            path: '/about'
+        },
+        {
+            title: "About",
+            path: '/about'
+        },
+        {
+            title: "About",
+            path: '/about'
+        },
+        {
+            title: "About",
+            path: '/about'
+        },
+        {
+            title: "About",
+            path: '/about'
+        },
+    ]
     return (
         <div>
             <nav className="bg-sky-600 p-6 flex justify-between">
