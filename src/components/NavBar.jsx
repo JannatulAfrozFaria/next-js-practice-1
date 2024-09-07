@@ -35,7 +35,7 @@ const NavBar = () => {
                         links?.map((link)=> <Link className={`${pathName === link.path && "text-purple-200 font-semibold" }`} key={link.path} href={link.path} > {link.title} </Link> )
                     }
                 </ul>
-                <button className="text-white">Login</button>
+                <button className="text-white bg-blue-600">Login</button>
             </nav>
         </div>
     );
