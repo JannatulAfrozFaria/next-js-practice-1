@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
           <ul>
             <Link href={'/about'} >About</Link>
             <Link href={'/service'} >Service</Link>
-            <Link href={'/service'} >Port Folio</Link>
-            <Link href={'/service'} >Blogs</Link>
+            <Link href={'/portfolio'} >Port Folio</Link>
+            <Link href={'/blogs'} >Blogs</Link>
             <Link href={'/contact'} >Contact</Link>
           </ul>
         </nav>
