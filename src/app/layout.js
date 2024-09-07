@@ -32,6 +32,9 @@ export default function RootLayout({ children }) {
           </ul>
         </nav>
         {children}
+        <footer>
+          <h1>Here comes the footer</h1>
+        </footer>
       </body>
     </html>
   );
