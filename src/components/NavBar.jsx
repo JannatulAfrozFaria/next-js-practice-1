@@ -32,6 +32,16 @@ const NavBar = () => {
             path: '/dashboard'
         },
     ]
+    const dashboardLinks = [
+        {
+            title: "Create User",
+            path: '/createUser'
+        },
+        {
+            title: "Profile",
+            path: '/profile'
+        },
+    ]
     const handler = () =>{
         router.push('/login')
     }
