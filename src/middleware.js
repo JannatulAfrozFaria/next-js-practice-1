@@ -1,3 +1,3 @@
-export const middleware = () =>{
-    
+export const middleware = (request) =>{
+
 }
