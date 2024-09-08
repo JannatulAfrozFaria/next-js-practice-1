@@ -2,7 +2,7 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div className='h-screen'>
+        <div >
             <h1>Categories will be shown here</h1>
         </div>
     );
