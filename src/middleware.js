@@ -6,5 +6,7 @@ export const middleware = (request) =>{
     //rewrite changes the content but does not change the url path name
 }
 export const config = {
-    matcher: '/about'
+    // matcher: '/about'
+    //redirect can be used for multiple pages as below with [ ] and comma(,)
+     matcher: '/about'
 }
