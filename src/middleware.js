@@ -8,5 +8,5 @@ export const middleware = (request) =>{
 export const config = {
     // matcher: '/about'
     //redirect can be used for multiple pages as below with [ ] and comma(,)
-     matcher: ['/about']
+     matcher: ['/about','/service']
 }
