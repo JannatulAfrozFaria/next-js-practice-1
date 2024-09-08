@@ -35,11 +35,11 @@ const NavBar = () => {
     const dashboardLinks = [
         {
             title: "Create User",
-            path: '/createUser'
+            path: '/dashboard/createUser'
         },
         {
             title: "Profile",
-            path: '/profile'
+            path: '/dashboard/profile'
         },
     ]
     const handler = () =>{
@@ -50,9 +50,7 @@ const NavBar = () => {
         <div>
             <div className='bg-blue-300 p-6'>
                 <ul className="flex gap-4">
-                    <li>Dashboard</li>
-                    <li> <Link href={'/createUser'}>Create User</Link> </li>
-                    <li> <Link href={'/profile'}>Profile</Link> </li>
+                    
                 </ul>
             </div>
             <div>Dashboard Content</div>
