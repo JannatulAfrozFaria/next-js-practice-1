@@ -4,5 +4,5 @@ export const middleware = (request) =>{
     return NextResponse.next()
 }
 export const config = {
-    
+    matcher: '/dashboard'
 }
