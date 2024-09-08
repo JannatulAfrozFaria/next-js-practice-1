@@ -52,7 +52,7 @@ const NavBar = () => {
                 <ul className="flex gap-4">
                     {
                         dashboardLinks?.map((link)=>
-                            <Link>{link.title} </Link>
+                            <Link key={link.path} href={link.path} >{link.title} </Link>
                         )
                     }
                 </ul>
