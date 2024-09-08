@@ -40,7 +40,7 @@ const NavBar = () => {
         {
             title: "Profile",
             path: '/dashboard/profile'
-        },
+        }
     ]
     const handler = () =>{
         router.push('/login')
@@ -49,12 +49,13 @@ const NavBar = () => {
         return (
         <div>
             <div className='bg-blue-300 p-6'>
-                <ul className="flex gap-4">
+                <ul className="flex gap-4 items-center">
                     {
                         dashboardLinks?.map((link)=>
                             <Link className={`${pathName === link.path && "text-blue-700 font-semibold" }`}  key={link.path} href={link.path} >{link.title} </Link>
                         )
                     }
+                    <button className="text-white bg-blue-600 p-2 rounded-md"> <Link href={'/'} >Go to Home</Link> </button>
                 </ul>
             </div>
             <footer>
