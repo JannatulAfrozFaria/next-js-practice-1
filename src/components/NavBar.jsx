@@ -50,7 +50,11 @@ const NavBar = () => {
         <div>
             <div className='bg-blue-300 p-6'>
                 <ul className="flex gap-4">
-                    
+                    {
+                        dashboardLinks.map((link)=>
+                            <Link>{title} </Link>
+                        )
+                    }
                 </ul>
             </div>
             <div>Dashboard Content</div>
