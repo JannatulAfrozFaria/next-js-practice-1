@@ -1,22 +1,12 @@
-import Link from "next/link";
+import React from 'react';
 
-const BlogsPage = () => {
+const page = ({params}) => {
+    console.log(params.dynamic);
+    const {title,description} = blogs.find((blog)=>blog.id == params.dynamic);
     return (
-        <div>
-            <h1>This is the Blogs section where you can go through blogs written by our contributors</h1>
-            <div className="grid grid-cols-3 gap-4 w-5/6 mx-auto my-8">
-                {
-                    blogs.map((blog => 
-                        <div key={blog.id} className="border-2 p-12" >  
-                            <h3 className="text-sky-600 font-semibold"> {blog.title} </h3>
-                            <p> {blog.description} </p>
-                            <button className="bg-sky-200 p-2 rounded-md my-3 text-sky-800">
-                                <Link href={`/blogs/${blog.id}`} >View Details</Link>
-                            </button>
-                        </div>
-                     ))
-                }
-            </div>
+        <div className='w-5/6 mx-auto my-8 text-center'>
+            <h2>This is the Details of <br /> <span className='text-3xl text-sky-600 font-semibold'>{title}</span> </h2>
+            <p> {description} </p>
         </div>
     );
 };
@@ -84,4 +74,4 @@ const blogs = [
     }
 ]  
 
-export default BlogsPage;
+export default page;
