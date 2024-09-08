@@ -39,7 +39,11 @@ const NavBar = () => {
         return (
         <div>
             <div className='bg-blue-300 p-6'>
-                Dashboard Layout
+                <ul className="flex gap-4">
+                    <li>Dashboard</li>
+                    <li> <Link href={'/createUser'}>Create User</Link> </li>
+                    <li> <Link href={'/profile'}>Profile</Link> </li>
+                </ul>
             </div>
             <div>Dashboard Content</div>
             <footer>
