@@ -41,7 +41,7 @@ const NavBar = () => {
             <div className='bg-blue-300 p-6'>
                 Dashboard Layout
             </div>
-            <div>Dhboard Content</div>
+            <div>Dashboard Content</div>
             <footer>
                 Dashboard Footer
             </footer>
