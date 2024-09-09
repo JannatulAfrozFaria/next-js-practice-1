@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-const user =  false;
+const user =  true;
 export const middleware = (request) =>{
     // if(request.nextUrl.pathname.startsWith('/about')){
     //     return NextResponse.redirect(new URL('/contact',request.url))
@@ -16,5 +16,5 @@ export const middleware = (request) =>{
 export const config = {
     // matcher: '/about'
     //redirect can be used for multiple pages as below with [ ] and comma(,)
-    //  matcher: ['/about','/service']
+     matcher: ['/dashboard','/service']
 }
