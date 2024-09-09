@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 
 const user =  true;
+const co = 'next-superhero'
 export const middleware = (request) =>{
     //return NextResponse.redirect(new URL('/contact',request.url))
 
