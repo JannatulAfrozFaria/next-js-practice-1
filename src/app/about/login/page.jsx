@@ -2,7 +2,7 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div>
+        <div className=' p-8 text-center'>
             <h1>Login form</h1>
             <h2>Email: </h2>
             <input type="email" name="Your Email" id="" />
