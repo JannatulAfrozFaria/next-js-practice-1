@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 
 export const middleware = (request) =>{
-    if(request.url === '/about'){
+    if(request.nextUrl.pathname.startWith('/about')){
         return NextResponse.redirect(new URL('/contact',request.url))
     }
     
