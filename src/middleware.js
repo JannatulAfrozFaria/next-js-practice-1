@@ -9,7 +9,7 @@ export const middleware = (request) =>{
     //     return NextResponse.redirect(new URL('/contact',request.url))
     // }
     const cookies = request.cookies.get('token')
-    if(!cookies || cookies !== coo){
+    if(!cookies || cookies.value !== coo){
         return NextResponse.redirect(new URL('/login', request.url))
     }
     return NextResponse.next();
