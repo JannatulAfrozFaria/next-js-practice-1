@@ -2,9 +2,9 @@ import { NextResponse } from "next/server"
 
 const user =  false;
 export const middleware = (request) =>{
-    if(request.nextUrl.pathname.startsWith('/about')){
-        return NextResponse.redirect(new URL('/contact',request.url))
-    }
+    // if(request.nextUrl.pathname.startsWith('/about')){
+    //     return NextResponse.redirect(new URL('/contact',request.url))
+    // }
     if(!user){
         return NextResponse.redirect(new URL('/login',request.url))
     }
