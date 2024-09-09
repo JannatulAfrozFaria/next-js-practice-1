@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 
 const user =  true;
-const co = 'next-superhero'
+const coo = 'next-superhero'
 export const middleware = (request) =>{
     //return NextResponse.redirect(new URL('/contact',request.url))
 
@@ -11,7 +11,7 @@ export const middleware = (request) =>{
     const cookies = request.cookies.get('token')
     if(!cookies){
         return NextResponse.redirect(new URL('/login', request.url) )
-    }
+    } else if(cookies !== coo)
 
     // if(!user){
     //     return NextResponse.redirect(new URL('/login',request.url))
