@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server"
 
 export const middleware = (request) =>{
-    if(request.url === '/about')
-    return NextResponse.redirect(new URL('/contact',request.url))
+    if(request.url === '/about'){
+        return NextResponse.redirect(new URL('/contact',request.url))
+    }
+    
     //redirect changes the url and content
     //rewrite changes the content but does not change the url path name
 }
