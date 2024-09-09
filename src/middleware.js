@@ -7,11 +7,12 @@ export const middleware = (request) =>{
     // if(request.nextUrl.pathname.startsWith('/about')){
     //     return NextResponse.redirect(new URL('/contact',request.url))
     // }
-    
-    if(!user){
-        return NextResponse.redirect(new URL('/login',request.url))
-    }
-    return NextResponse.next();
+    const cookies = request.cookies.get('token')
+
+    // if(!user){
+    //     return NextResponse.redirect(new URL('/login',request.url))
+    // }
+    // return NextResponse.next();
     
     //redirect changes the url and content
     //rewrite changes the content but does not change the url path name
