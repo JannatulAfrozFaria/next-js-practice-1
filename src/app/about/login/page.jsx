@@ -8,6 +8,7 @@ const page = () => {
             <input type="email" name="Your Email" id="" />
             <h2>Password: </h2>
             <input type="password" name="Your Password" id="" />
+            <br />
             <button className='text- white bg-sky-500 p-2 rounded-lg'>Login</button>
         </div>
     );
