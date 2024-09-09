@@ -10,8 +10,10 @@ export const middleware = (request) =>{
     // }
     const cookies = request.cookies.get('token')
     if(!cookies){
-        return NextResponse.redirect(new URL('/login', request.url) )
-    } else if(cookies !== coo)
+        return NextResponse.redirect(new URL('/login', request.url))
+    } else if(cookies !== coo){
+        
+    }
 
     // if(!user){
     //     return NextResponse.redirect(new URL('/login',request.url))
